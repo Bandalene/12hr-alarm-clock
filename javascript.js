@@ -15,22 +15,25 @@ function newClock() {
 var a
 var c
 stop = 1
+
 function checkTime() {
-    a = document.getElementById('hoursSet').value;
+    a = document.getElementById("hoursSet").value;
     c = document.getElementById("minutesSet").value;
     checkHour();
 }
+
 function checkHour() {
 if (a == hours) {
     checkMinute();
     }
 }
-function checkMintue() {
+function checkMinute() {
     if (c == minutes) {
         stop = 0
         playAlarm();
     }
 }
+
 function playAlarm() {
     if (stop == 0) {
     document.getElementById("sound").play()

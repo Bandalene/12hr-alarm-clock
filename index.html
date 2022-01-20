@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>24hr Alarm Clock</title> 
+    <script src="javascript.js"></script>   
+</head>
+<body onload="newClock()">
+    
+    <div class = container>
+        <p id="demo" class="clock"></p>
+        <div class = hourTextBox>
+            <input class = textBox type = text; id="hoursSet" placeholder="Hour">
+            </input>
+        </div>
+        <div class = minuteTextBox>
+            <input class = textBox type = text; id="minutesSet" placeholder="Minute"></input>
+        </div>
+        <div class = stopAlarm>
+            <button class = stopButton onclick = "stopAlarm();">Stop Alarm</button>
+        </div>
+    </div>
+    <audio src="Alarm-Clock Sound!!! (mp3cut.net).mp3" id="sound"></audio>
+
+
+</body>
+</html>

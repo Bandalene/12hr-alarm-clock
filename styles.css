@@ -1,0 +1,30 @@
+.clock {
+    font-size: 175px;
+    text-align: center;
+    border-style: dotted;
+    border-width: 10px;
+}
+.container {
+    margin: auto;
+    display: block;
+}
+.hourTextBox {
+    text-align: center;
+}
+.minuteTextBox {
+    text-align: center;
+}
+.stopAlarm {
+    text-align: center;
+}
+.stopButton {
+    color: red;
+    background-color: black;
+    border-radius: 20px;
+}
+body {
+    background: rgb(59, 230, 116);
+}
+.textBox {
+    background-color: rgb(206, 203, 203);
+}

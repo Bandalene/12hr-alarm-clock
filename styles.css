@@ -1,10 +1,15 @@
 .clock {
-    font-size: 175px;
+    text-shadow: 5px 5px rgb(9, 0, 61);
     text-align: center;
+    color: rgb(24, 0, 240);
+    font-size: 175px;
     border-width: 10px;
+    border-style:ridge;
+    border-color:rgb(12, 0, 78);
+    /*border-image: url(lilclock.jfif)
     animation-name: border;
     animation-duration: 3s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;*/
 }
 .container {
     margin: auto;
@@ -25,25 +30,26 @@
     border-radius: 20px;
 }
 body {
-    background: rgb(59, 230, 116);
+    background-image: url("clock.jpg");
+    background-size: cover;
 }
 .textBox {
     background-color: rgb(206, 203, 203);
 }
-@keyframes border {
-    0% {border-style: dotted;
-        border-color: black;
-        }
+/*@keyframes border {
+    0% {border-image: url();
+        border-color: blue;
+}
     25% {border-style: dashed;
-        border-color: black;
-        }
-    50% {border-style: dotted;
-         border-color: white;
-        }
-    75% {border-style: dashed;
-         border-color: white;
-        }
+        border-color: blue;
+}
+    50% {border-style: dashed;
+        border-color: purple;
+    }
+    75% {border-style: dotted;
+        border-color: purple;
+    }
     100% {border-style: dotted;
-         border-color: black;
-        }
-  }
+        border-color: blue;
+    }
+}

@@ -1,8 +1,10 @@
 .clock {
     font-size: 175px;
     text-align: center;
-    border-style: dotted;
     border-width: 10px;
+    animation-name: border;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 .container {
     margin: auto;
@@ -28,3 +30,14 @@ body {
 .textBox {
     background-color: rgb(206, 203, 203);
 }
+@keyframes border {
+    0% {border-style: dotted;
+        border-color: black;
+    }
+    50% {border-style: dashed;
+        border-color: white;
+    }
+    100% {border-style: dotted;
+          border-color: black;
+    }
+  }

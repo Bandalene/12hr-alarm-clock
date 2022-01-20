@@ -12,25 +12,20 @@ function newClock() {
     }, 1000)
 }
 
-var a
-var c
+let a
+let c
 stop = 1
 
 function checkTime() {
     a = document.getElementById("hoursSet").value;
     c = document.getElementById("minutesSet").value;
-    checkHour();
+    checkAlarm();
 }
 
-function checkHour() {
-if (a == hours) {
-    checkMinute();
-    }
-}
-function checkMinute() {
-    if (c == minutes) {
-        stop = 0
-        playAlarm();
+function checkAlarm() {
+if (a == hours && c == minutes) {
+    stop = 0
+    playAlarm();
     }
 }
 

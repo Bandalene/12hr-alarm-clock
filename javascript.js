@@ -18,12 +18,17 @@ stop = 1
 function checkTime() {
     a = document.getElementById('hoursSet').value;
     c = document.getElementById("minutesSet").value;
-    checkAlarm();
+    checkHour();
 }
-function checkAlarm() {
-if (a == hours , c == minutes) {
-    stop = 0
-    playAlarm();
+function checkHour() {
+if (a == hours) {
+    checkMinute();
+    }
+}
+function checkMintue() {
+    if (c == minutes) {
+        stop = 0
+        playAlarm();
     }
 }
 function playAlarm() {

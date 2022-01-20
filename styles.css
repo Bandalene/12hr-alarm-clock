@@ -3,7 +3,7 @@
     text-align: center;
     border-width: 10px;
     animation-name: border;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 .container {
@@ -33,11 +33,17 @@ body {
 @keyframes border {
     0% {border-style: dotted;
         border-color: black;
-    }
-    50% {border-style: dashed;
-        border-color: white;
-    }
+        }
+    25% {border-style: dashed;
+        border-color: black;
+        }
+    50% {border-style: dotted;
+         border-color: white;
+        }
+    75% {border-style: dashed;
+         border-color: white;
+        }
     100% {border-style: dotted;
-          border-color: black;
-    }
+         border-color: black;
+        }
   }

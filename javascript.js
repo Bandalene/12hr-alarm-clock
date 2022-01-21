@@ -4,6 +4,9 @@ function newClock() {
         hours = currentDate.getHours();
         minutes = currentDate.getMinutes();
         seconds = currentDate.getSeconds();
+        seconds = seconds >= 10 ? `${seconds}` : `0${seconds}`;
+        minutes = minutes >= 10 ? `${minutes}` : `0${minutes}`;
+        hours = hours >= 10 ? `${hours}` : `0${hours}`;
         customDate = `${hours}:${minutes}:${seconds}`;
         newClock();
         checkTime();
@@ -15,7 +18,7 @@ function newClock() {
 let a
 let c
 stop = 1
-string = seconds >= 10 ? `${seconds}` : `0${seconds}`;
+
 
 function checkTime() {
     a = document.getElementById("hoursSet").value;

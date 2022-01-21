@@ -6,9 +6,15 @@ function newClock() {
         seconds = currentDate.getSeconds();
         seconds = seconds >= 10 ? `${seconds}` : `0${seconds}`;
         minutes = minutes >= 10 ? `${minutes}` : `0${minutes}`;
-        hours = hours > 12 ? `${hours-12}` : `${hours}`;
-        hours = hours >= 10 ? `${hours}` : `0${hours}`;
-        customDate = `${hours}:${minutes}:${seconds}`;
+        if (hours > 12 && hours - 12 < 10) {
+            customDate = `0${hours-12}:${minutes}:${seconds}p.m.`
+        } else if (hours > 12) {
+            customDate = `${hours-12}:${minutes}:${seconds}p.m.`
+        } else if (hours <= 12 && hours - 12 < 10) {
+            customDate = `0${hours}:${minutes}:${seconds}a.m.`
+        } else if (hours <= 12) {
+            customDate = `${hours}:${minutes}:${seconds}a.m.`
+        }
         newClock();
         checkTime();
         document.getElementById('demo').innerHTML = customDate;

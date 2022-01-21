@@ -6,6 +6,7 @@ function newClock() {
         seconds = currentDate.getSeconds();
         seconds = seconds >= 10 ? `${seconds}` : `0${seconds}`;
         minutes = minutes >= 10 ? `${minutes}` : `0${minutes}`;
+        hours = hours > 12 ? `${hours-12}` : `${hours}`;
         hours = hours >= 10 ? `${hours}` : `0${hours}`;
         customDate = `${hours}:${minutes}:${seconds}`;
         newClock();

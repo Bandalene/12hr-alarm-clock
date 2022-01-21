@@ -15,6 +15,7 @@ function newClock() {
 let a
 let c
 stop = 1
+string = seconds >= 10 ? `${seconds}` : `0${seconds}`;
 
 function checkTime() {
     a = document.getElementById("hoursSet").value;

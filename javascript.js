@@ -1,7 +1,4 @@
-let a
-let b
-let c
-stop = 1
+let a, b, c, stop = 1, currentDate, hours, minutes, seconds, ampm, customDate;
 function newClock() {
     setTimeout(function() {
         currentDate = new Date();

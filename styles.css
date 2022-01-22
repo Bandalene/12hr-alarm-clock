@@ -42,6 +42,48 @@ body {
 /*@keyframes border {
     0% {border-image: url();
         border-color: blue;
+}@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.clock {
+    text-shadow: 5px 5px 10px rgb(2, 44, 7);
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.295);
+    color: rgb(140, 192, 44);
+    font-size: 150px;
+    border-width: 10px;
+    border-style:ridge;
+    border-color:rgb(12, 7, 43);
+    font-family: 'Orbitron', sans-serif;
+}
+.container {
+    margin: auto;
+    display: block;
+}
+.container2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.hourTextBox {
+    text-align: center;
+}
+.minuteTextBox {
+    text-align: center;
+}
+.stopAlarm {
+    text-align: center;
+}
+.stopButton {
+    color: rgb(17, 248, 94);
+    background-color: black;
+    border-radius: 20px;
+}
+body {
+    background-image: url("clock.jpg");
+    background-size: cover;
+}
+.textBox {
+    background-color: rgb(206, 203, 203);
 }
     25% {border-style: dashed;
         border-color: blue;

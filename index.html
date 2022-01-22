@@ -8,17 +8,26 @@
 </head>
 <body onload="newClock()">
     
-    <div class = container>
-        <p id="demo" class="clock">00:00:00</p>
-        <div class = hourTextBox>
-            <input class = textBox type = text; id="hoursSet" placeholder="Hour">
-            </input>
-        </div>
-        <div class = minuteTextBox>
-            <input class = textBox type = text; id="minutesSet" placeholder="Minute"></input>
-        </div>
-        <div class = stopAlarm>
-            <button class = stopButton onclick = "stopAlarm();">Stop Alarm</button>
+    <div class = "container">
+        <p id="demo" class="clock">00:00:00<ins id = "ampmOnClock"></ins></p>
+        <div class = "container2">
+            <div class = "hourTextBox">
+                <input class = "textBox" type = text; id="hoursSet" placeholder="Hour">
+                </input>
+            </div>
+            <div class = "minuteTextBox">
+                <input class = "textBox" type = text; id="minutesSet" placeholder="Minute"></input>
+            </div>
+            <div class="dropDown">
+            <select name="AM or PM" id="amPM">
+                <option value="--">--</option>
+                <option value="A.M.">A.M.</option>
+                <option value="P.M.">P.M.</option>
+            </select>
+            </div>
+            <div class = "stopAlarm">
+                <button class = "stopButton" onclick = "stopAlarm();">Stop Alarm</button>
+            </div>
         </div>
     </div>
     <audio src="Alarm-Clock Sound!!! (mp3cut.net).mp3" id="sound"></audio>
